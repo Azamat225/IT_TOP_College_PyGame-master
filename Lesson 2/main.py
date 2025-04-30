@@ -4,7 +4,7 @@ pg.init()
 SIZE = WIDTH, HEIGHT = 800, 600
 screen = pg.display.set_mode(SIZE)
 
-from my_sprite import Kuplich
+from my_sprite import Player
 
 FPS = 60
 BACKGROUND_COLOR = (0, 0, 0)
@@ -14,7 +14,7 @@ running = True
 
 npc = pg.sprite.Group()
 for _ in range(10):
-    npc.add(Kuplich())
+    npc.add(Player())
 
 while running:
     for event in pg.event.get():
